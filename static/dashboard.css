@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #0b132b, #1c2541);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Main dashboard card */
+.dashboard-card {
+    width: 850px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(14px);
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+}
+
+/* Title */
+.dashboard-card h2 {
+    text-align: center;
+    color: #7dd3fc;
+    margin-bottom: 20px;
+}
+
+/* Account info strip */
+.account-box {
+    background: rgba(255,255,255,0.15);
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.account-box p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+/* Buttons row */
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Buttons */
+.btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    background: linear-gradient(135deg, #7dd3fc, #38bdf8);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+/* Logout special color */
+.logout {
+    background: linear-gradient(135deg, #fb7185, #f43f5e);
+    color: white;
+}
+.welcome-box {
+    background: rgba(255,255,255,0.18);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.welcome-box h2 {
+    color: #7dd3fc;   /* sky blue */
+    font-weight: bold;
+}
+/* Account details box */
+.account-details {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding: 18px 25px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Spacing between each line */
+.account-details p {
+    margin: 10px 0;     /* 👈 THIS creates gap */
+    font-size: 15px;
+    line-height: 1.6;   /* 👈 smoother spacing */
+    color: #ffffff;
+}
+form button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #000;
+    background: linear-gradient(135deg, #56ccf2, #2f80ed);
+    border: none;
+    cursor: pointer;
+}
+form button:hover {
+    background: linear-gradient(135deg, #2f80ed, #56ccf2);
+}
+
+

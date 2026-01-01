@@ -1,0 +1,206 @@
+/* =====================
+   GLOBAL RESET
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* =====================
+   PAGE BACKGROUND
+===================== */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+/* =====================
+   MAIN CARD / BOX
+===================== */
+.dashboard-box {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 30px 35px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+    text-align: center;
+}
+
+/* =====================
+   HEADING BOX
+===================== */
+.welcome-box {
+    background: rgba(255, 255, 255, 0.18);
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.welcome-box h2 {
+    color: #7dd3fc;     /* Sky blue */
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* =====================
+   INPUTS & SELECT
+===================== */
+input,
+select {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #64748b;
+}
+
+select {
+    cursor: pointer;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.btn {
+    display: inline-block;
+    padding: 11px 22px;
+    margin: 8px 4px;
+    background: #7dd3fc;
+    color: #0f172a;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #5bbde6;
+}
+
+/* Logout button */
+.logout {
+    background: #f87171;
+    color: white;
+}
+
+.logout:hover {
+    background: #ef4444;
+}
+
+/* =====================
+   ACCOUNT DETAILS CARD
+===================== */
+.account-details {
+    margin: 20px 0 25px;
+    padding: 18px 25px;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.account-details p {
+    margin: 10px 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.account-details b {
+    color: #7dd3fc;
+    font-weight: 600;
+}
+
+/* =====================
+   DASHBOARD BUTTONS
+===================== */
+.dashboard-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* =====================
+   BACK BUTTON (TRANSACTIONS, TRANSFER)
+===================== */
+.back-btn-container {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.back-btn {
+    background-color: #7dd3fc;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-btn:hover {
+    background-color: #5bbde6;
+}
+
+/* =====================
+   LINKS
+===================== */
+a {
+    color: #7dd3fc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =====================
+   SMALL SCREENS
+===================== */
+@media (max-width: 500px) {
+    .dashboard-box {
+        padding: 25px 20px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+/* Back button outer container box */
+.back-box {
+    margin-top: 30px;                 /* space from transactions */
+    padding: 18px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Back to dashboard button */
+.back-btn {
+    background-color: #7dd3fc;        /* sky blue */
+    color: white;
+    padding: 12px 26px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.back-btn:hover {
+    background-color: #5bbde6;
+}

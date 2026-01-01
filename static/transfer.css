@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Full page center */
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #0b132b, #1c2541);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Main card */
+.card {
+    width: 750px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+/* Heading */
+.card h2 {
+    color: #7dd3fc;
+    margin-bottom: 30px;
+}
+
+/* Form */
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Inputs */
+.form-box label {
+    width: 65%;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+.form-box input {
+    width: 65%;
+    padding: 12px;
+    margin-bottom: 22px;
+    border-radius: 6px;
+    border: none;
+}
+
+/* Buttons wrapper */
+.form-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Common button */
+.btn {
+    width: 65%;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    background: linear-gradient(135deg, #7dd3fc, #38bdf8);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Transfer button spacing */
+.transfer-btn {
+    margin-top: 10px;
+}
+
+/* 🔴 THIS IS THE IMPORTANT PART */
+.back-btn {
+    margin-top: 45px;   /* ⬅ PUSHES IT CLEARLY DOWN */
+    width: 50%;         /* slightly smaller */
+    font-size: 14px;
+}
