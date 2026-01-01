@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transactions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='transactions.css') }}">
+</head>
+<body>
+
+<div class="dashboard-box">
+
+    <div class="welcome-box">
+        <h2>Transaction History</h2>
+    </div>
+
+    <!-- TABLE VIEW -->
+    <table border="1" width="100%" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Amount</th>
+                <th>Type</th>
+                <th>Date & Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if transactions %}
+                {% for txn in transactions %}
+                <tr>
+                    <td>₹ {{ txn.amount }}</td>
+                    <td>{{ txn.transaction_type }}</td>
+                    <td>{{ txn.created_at }}</td>
+                </tr>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <td colspan="3" style="text-align:center;">
+                        No transactions found
+                    </td>
+                </tr>
+            {% endif %}
+        </tbody>
+    </table>
+
+    <br><hr><br>
+
+    <!-- SIMPLE LIST VIEW -->
+    <div class="account-details">
+        {% for txn in transactions %}
+            <p>
+                <b>{{ txn.transaction_type }}</b> ₹{{ txn.amount }} <br>
+                <small>{{ txn.created_at }}</small>
+            </p>
+        {% endfor %}
+    </div>
+
+    <div class="back-box">
+        <a href="{{ url_for('dashboard') }}" class="btn back-btn">
+            ⬅ Back to Dashboard
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

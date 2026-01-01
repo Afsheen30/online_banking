@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+</head>
+<body>
+
+<div class="dashboard-box">
+
+    <!-- Welcome box -->
+    <div class="welcome-box">
+        <h2>Welcome, {{ user.fullname }}</h2>
+    </div>
+
+    <!-- Account information -->
+    <div class="account-details">
+        <p><b>Account Number:</b> 1234567890</p>
+        <p><b>Account Type:</b> {{ user.account_type }}</p>
+        <p><b>Balance:</b> ₹{{ user.balance }}</p>
+    </div>
+
+    <!-- Action buttons -->
+    <div class="dashboard-buttons">
+        <a href="/transfer" class="btn">💸 Fund Transfer</a>
+        <a href="/transactions" class="btn">📄 Transactions</a>
+        <a href="/beneficiary" class="btn">👤 Beneficiaries</a>
+        <a href="/logout" class="btn logout">🚪 Logout</a>
+    </div>
+
+</div>
+
+</body>
+</html>

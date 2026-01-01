@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beneficiary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='beneficiary.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Add Beneficiary</h2>
+
+    <form>
+        <label>Name</label>
+        <input type="text" required>
+
+        <label>Account Number</label>
+        <input type="text" required>
+
+        <button type="submit">Add</button>
+    </form>
+
+    <a href="/dashboard">⬅ Back to Dashboard</a>
+</div>
+
+</body>
+</html>
+

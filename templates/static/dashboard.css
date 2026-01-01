@@ -1,0 +1,51 @@
+body {
+    background: linear-gradient(135deg, #0d1b2a, #415a77);
+    font-family: Arial;
+    padding: 40px;
+    color: white;
+}
+
+.dash-container {
+    width: 900px;
+    margin: auto;
+    margin-top: 60px;
+    background: rgba(255,255,255,0.10);
+    border-radius: 12px;
+    padding: 35px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(237, 227, 227, 0.25);
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+.dash-container h2 {
+    color: #4dcaff;
+    text-shadow: 0 0 12px rgba(94, 189, 215, 0.8);
+}
+
+.account-card {
+    background: rgba(225, 234, 241, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.account-card h3 {
+    background: #c9d6e8;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.menu-buttons a {
+    display: inline-block;
+    margin: 12px;
+    padding: 12px 26px;
+    background: linear-gradient(90deg, #4dd5ff, #63c0d4);
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 12px rgba(62, 59, 239, 0.5);
+    text-decoration: none;
+}

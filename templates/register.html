@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}">
+</head>
+<body>
+
+<div class="card">
+    <h2>Register</h2>
+
+    <form method="POST">
+        <input type="text" name="fullname"
+               placeholder="Full Name"
+               pattern="[A-Za-z ]{3,}"
+               title="Only letters, minimum 3 characters"
+               required>
+
+        <input type="email" name="email"
+               placeholder="Email Address"
+               required>
+
+        <input type="text" name="phone"
+               placeholder="Phone Number"
+               pattern="[0-9]{10}"
+               title="Enter 10 digit phone number"
+               required>
+
+        <input type="password" name="password"
+               placeholder="Password"
+               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+               title="Min 6 chars, 1 uppercase, 1 lowercase, 1 number"
+               required>
+         <input type="text"
+       name="account_number"
+       placeholder="Account Number"
+       pattern="[0-9]{10,16}"
+       title="Enter valid account number"
+       required>      
+         <select name="account_type" required>
+        <option value="">Select Account Type</option>
+        <option value="Savings Account">Savings Account</option>
+        <option value="Current Account">Current Account</option>
+    </select>
+
+    <button class="btn">Register</button>
+</form>      
+
+        
+
+    <p class="link">
+        Already have an account?
+        <a href="/login">Login</a>
+    </p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fund Transfer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='transfer.css') }}">
+</head>
+<body>
+
+<div class="card">
+    <h2>Fund Transfer</h2>
+
+    <form class="form-box">
+        <label>Account Number</label>
+        <input type="text" placeholder="Enter account number">
+
+        <label>Amount</label>
+        <input type="number" placeholder="Enter amount">
+
+        <button type="submit" class="btn">Transfer</button>
+    </form>
+
+    <!-- Back button -->
+    <a href="/dashboard" class="btn back-btn">⬅ Back to Dashboard</a>
+</div>
+
+</body>
+</html>
